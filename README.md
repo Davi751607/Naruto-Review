@@ -156,7 +156,7 @@ src/
   - Transições suaves (0.1s - 0.2s)
 
 
-## 📸 Screenshots
+## Screenshots
 
 ### Página de Login
 *Formulário de login com autenticação segura e validação de credenciais*
@@ -179,7 +179,7 @@ src/
 ![Editar](./public/assets/edit.png)
 
 
-## 🔧 Configuração de Variáveis de Ambiente
+##  Configuração de Variáveis de Ambiente
 
 Crie um arquivo `.env.local` na raiz do projeto com as seguintes variáveis:
 
