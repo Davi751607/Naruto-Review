@@ -1,0 +1,33 @@
+[
+  {
+    "id": "883d3d5f-6028-4a16-a299-6bdb61f84f23",
+    "email": "aae@gmail.com",
+    "password": "$2b$10$BUeGNdtrwu2gDkSIMgPSxOZZ5z3/A5tGzb8SafYT0hIKgKwtdl2TO"
+  },
+  {
+    "id": "b8e60a16-fd61-44f6-a3ae-c4a4fba9bddd",
+    "email": "teste@gmail.com",
+    "password": "$2b$10$pCgezxcSsl8i6SEjxvduy.JnJ7jbX41iItR0qQUdFipJzx7XdIy4."
+  },
+  {
+    "id": "54818949-acaf-4e56-8539-f19af5171f73",
+    "email": "alou@gmail.com",
+    "password": "$2b$10$MeYW6CF7hNMIw7T9n90cpekXl6yOEUY.36Kl5Tc0yYUU02XH7ozBi"
+  },
+  {
+    "id": "b465c76f-2fe2-40cb-a222-25e153c27674",
+    "email": "davigodoy1@outlook.com",
+    "password": "$2b$10$N76mTfLVTgdMUeBU5wlJVuCzXLH.GMmkymbus5LYAYgheB3Xv..n."
+  },
+  {
+    "id": "381d179b-8734-4fd2-b24f-c69c10744027",
+    "email": "d2020004280@unifei.edu.br",
+    "password": "$2b$10$HXrhJlPQiSzKq6fQjMlGGOuxr6ADiLZUCiLK/Ztw6DXQiEG5q/fgW"
+  },
+  {
+    "id": "76d0d5cc-1754-4773-979a-11591fd0da89",
+    "nome": "Patricki",
+    "email": "patrickicosta0@gmail.com",
+    "password": "$2b$10$Y61sK1wldxNEOrBXQmX6O.OGwfSPEuIzDLZgg5IaeMd9D8EFb3ql2"
+  }
+]

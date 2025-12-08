@@ -1,0 +1,29 @@
+[
+  {
+    "id": "85abc2b6-1c3d-48e0-ba0b-2964dd5f2167",
+    "nome": "Naruto Uzumaki",
+    "nota": 4,
+    "descricao": "",
+    "img": "https://cdn.myanimelist.net/images/characters/2/284121.webp",
+    "aniversario": "October 10",
+    "cla": "Uzumaki"
+  },
+  {
+    "id": "fd7d070a-c584-4822-9786-eb2302cb90c2",
+    "nome": "Tobirama Senju",
+    "nota": 8,
+    "descricao": "",
+    "img": "https://cdn.myanimelist.net/images/characters/2/293367.webp",
+    "aniversario": "February 19",
+    "cla": "Senju"
+  },
+  {
+    "id": "5e51bd7c-768e-4ea8-8b8f-c801042eb5df",
+    "nome": "Itachi Uchiha",
+    "nota": 6,
+    "descricao": "",
+    "img": "https://cdn.myanimelist.net/images/characters/9/284122.webp",
+    "aniversario": "June 9",
+    "cla": "Uchiha"
+  }
+]
