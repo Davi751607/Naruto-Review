@@ -1,0 +1,132 @@
+:root { 
+  --background: #000000;
+  --foreground: #171717;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-size: 1.1rem;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html { color-scheme: dark; }
+}
+
+/* ======== Naruto theme + utilitárias ======== */
+:root {
+  --accent: #f0ad00;       /* amarelo (Naruto) */
+  --card: #1f2833;         /* fundo dos cards */
+  --muted: #9aa0a6;        /* textos secundários */
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.card {
+  background: var(--card);
+  padding: 16px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,.25);
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.input,
+textarea.input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  background: #111;
+  color: #eee;
+  outline: none;
+}
+
+.input:focus,
+textarea.input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(240,173,0,.25);
+}
+
+.btn {
+  background: var(--accent);
+  color: #111;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.btn.secondary {
+  background: #45a29e;
+  color: #000;
+}
+
+.autocomplete {
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 10px;
+  margin-top: 6px;
+  max-height: 220px;
+  overflow: auto;
+}
+
+.autocomplete li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.autocomplete li:hover {
+  background: #1a1a1a;
+}
+
+.small {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
