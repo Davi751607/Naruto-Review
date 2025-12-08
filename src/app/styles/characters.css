@@ -1,0 +1,62 @@
+.characters-card {
+  background: #1f2833;
+  border: 1px solid #2a2f37;
+  border-radius: 16px;
+  padding: 14px;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 14px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.25);
+}
+
+.characters-card img {
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+#group1 h2 {
+  font-size: 1.15rem;
+  color: #fff;
+  margin: 2px 0 8px;
+}
+
+#group2 p, #group3 p {
+  color: #d7d7d7;
+  margin: 6px 0;
+}
+
+#group2 strong, #group3 strong { color: #ffe082; }
+
+/* Coluna direita vira 2 linhas em grid */
+#group2, #group3 {
+  display: block;
+}
+
+.character-buttons-container {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+#btn-edit, #btn-delete {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  transition: transform .05s ease, filter .15s ease;
+}
+
+#btn-edit, #btn-delete {
+  transition: filter 0.15s ease, transform 0.05s ease;
+}
+
+#btn-edit:hover, #btn-delete:hover { filter: brightness(1.08); }
+#btn-edit:active, #btn-delete:active { transform: translateY(1px); }
+
+@media (max-width: 700px) {
+  .characters-card {
+    grid-template-columns: 110px 1fr;
+  }
+}

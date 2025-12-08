@@ -1,0 +1,46 @@
+.autocomplete-wrapper {
+  position: relative;
+}
+
+.autocomplete-wrapper input {
+  width: 100%;
+  padding: .8rem;
+  background: #1b1b1b;
+  border: 1px solid #ff7c00;
+  border-radius: .5rem;
+  color: white;
+}
+
+.autocomplete-loading {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: .35rem;
+  font-size: .85rem;
+  color: #ffb84d;
+}
+
+.autocomplete-sugestoes {
+  position: absolute;
+  width: 100%;
+  max-height: 260px;         /* evitar lista infinita */
+  overflow: auto;            /* rolagem se passar */
+  background: #111;
+  border: 1px solid #ff7c00;
+  border-radius: .5rem;
+  margin-top: .35rem;
+  list-style: none;
+  z-index: 1000;             /* acima de outros cards */
+  box-shadow: 0 10px 26px rgba(0,0,0,.35);
+}
+
+.autocomplete-sugestao {
+  padding: .6rem .8rem;
+  cursor: pointer;
+}
+
+.autocomplete-sugestao:hover,
+.autocomplete-sugestao.is-active {
+  background: #ff7c00;
+  color: #000;
+}

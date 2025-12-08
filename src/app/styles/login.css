@@ -1,0 +1,120 @@
+/* Wrappa o form + a introdução lado a lado no desktop */
+.img-background {
+  min-height: calc(100dvh - 56px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+  gap: 0;
+  background:
+    linear-gradient(180deg, rgba(0,0,0,.6), rgba(0,0,0,.6)),
+    url("/naruto-background.png") center/cover no-repeat #0b0b0b;
+}
+
+@media (max-width: 900px) {
+  .img-background {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Card do formulário */
+.login-form {
+  display: grid;
+  place-items: center;
+  padding: 32px;
+}
+
+.login-form > div:first-child img {
+  width: 160px;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.35);
+  margin-bottom: 16px;
+}
+
+.login-form .user-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #111;
+  border: 1px solid #2a2a2a;
+  padding: 10px 12px;
+  border-radius: 12px;
+  margin: 10px 0;
+  width: min(420px, 90vw);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-form .user-input:focus-within {
+  border-color: #f0ad00;
+  box-shadow: 0 0 0 2px rgba(240,173,0,.15);
+}
+
+.login-form .user-input img {
+  width: 20px;
+  height: 20px;
+  opacity: .85;
+}
+
+.login-form input {
+  flex: 1;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #eee;
+  font-size: 1rem;
+}
+
+.login-form button {
+  width: min(420px, 90vw);
+  margin-top: 14px;
+  padding: 12px 14px;
+  background: #f0ad00;
+  color: #111;
+  border: 0;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.1s ease, filter 0.15s ease, box-shadow 0.15s ease;
+}
+
+.login-form button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(240,173,0,.3);
+}
+
+.login-form button:active { transform: translateY(1px); }
+.login-form button:hover { filter: brightness(1.05); }
+
+/* Texto abaixo do botão */
+.link-cadastrar {
+  margin-top: 12px;
+  color: #9aa0a6;
+  text-align: center;
+}
+
+.btn-criar-conta {
+  color: #f0ad00;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* Lado direito do layout (introdução) */
+.introducao {
+  display: grid;
+  align-content: center;
+  padding: clamp(20px, 6vw, 56px);
+  background: linear-gradient(180deg, rgba(17,17,17,.4), rgba(17,17,17,.6));
+}
+
+.introducao h2 {
+  color: #ffe082;
+  line-height: 1.15;
+  font-size: clamp(1.4rem, 2.2vw, 2rem);
+  margin-bottom: 12px;
+}
+
+.introducao p {
+  color: #d2d2d2;
+  margin: 8px 0;
+  max-width: 50ch;
+}
