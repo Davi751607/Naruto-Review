@@ -193,11 +193,13 @@ src/
 
 ##  Configuração de Variáveis de Ambiente
 
-Crie um arquivo `.env.local` na raiz do projeto 
-Neste este arquivo .env.local adicione:
-TOKEN=sua_chave_secreta_super_segura_aqui(chave aleatória)
+Crie um arquivo `.env.local` na raiz do projeto
+
+## Neste este arquivo .env.local adicione:
 
 ```env
+TOKEN=sua_chave_secreta_super_segura_aqui(chave aleatória)
+
 # Porta da aplicação (padrão: 3000)
 NEXT_PUBLIC_PORT=3000
 ```
