@@ -79,6 +79,9 @@ A aplicação estará disponível em `http://localhost:3000`
 ## Estrutura do Projeto
 
 ```
+public/
+|    └── assets/          # Pasta de assets públicos
+|     
 src/
 ├── app/
 │   ├── (auth)/
@@ -111,6 +114,15 @@ src/
 │       ├── footer.tsx            # Componente footer
 │       ├── characters.tsx        # Componente de cards
 │       └── autocompleteInput.tsx # Componente autocomplete
+| 
+├── .env.example            # Arquivo de exemplo de variáveis de ambiente
+├── .gitignore              # Arquivo para regras de ignore do Git
+├── next-env.d.ts           # Arquivo de tipagem automática do Next.js
+├── next.config.js          # Arquivo de configuração do Next.js
+├── package-lock.json       # Lockfile das dependências
+├── package.json            # Arquivo de dependências do projeto
+├── README.md               # Documentação do projeto
+├── tsconfig.json           # Arquivo de configuração do TypeScript
 ```
 
 ##  Segurança
@@ -181,15 +193,11 @@ src/
 
 ##  Configuração de Variáveis de Ambiente
 
-Crie um arquivo `.env.local` na raiz do projeto com as seguintes variáveis:
+Crie um arquivo `.env.local` na raiz do projeto 
+Neste este arquivo .env.local adicione:
+TOKEN=sua_chave_secreta_super_segura_aqui(chave aleatória)
 
 ```env
-# Chave de criptografia JWT para gerenciamento de sessões
-NEXT_PUBLIC_JWT_SECRET=sua_chave_secreta_super_segura_aqui
-
-# URL base da API do Naruto (opcional, use a padrão se não configurar)
-NEXT_PUBLIC_NARUTO_API_URL=https://narutodb.xyz
-
 # Porta da aplicação (padrão: 3000)
 NEXT_PUBLIC_PORT=3000
 ```
